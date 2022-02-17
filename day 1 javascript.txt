@@ -1,0 +1,21 @@
+1.deffernce bettween http 1.1 vs http2?
+
+Http 1.1:
+*It supports connection reuseUses 
+*Introduces a warning header field to carry additional information about the status of a message
+*Expands on the caching support by using additional headers like cache-control, conditional headers like If-Match and by using entity tags.
+Http2:
+*Uses multiplexing
+*Underlying semantics of HTTP such as headers, status codes remains the same.
+*does not change much in terms of caching
+
+2.Write a blog about objects and its internal representation in Javascript
+ Object is property and type in javascript, its means there is {} is an obeject . object contain key and value to store the data.
+ 
+
+var a={
+name:"rafiya",
+age:23
+}
+
+here key and value is internal representation by using : (colne) name :key , and rafiya is value
