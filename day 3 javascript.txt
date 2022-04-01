@@ -1,0 +1,135 @@
+1.For the given JSON iterate over all for loops (for, for in, for of, forEach)?
+ans:
+//for loop
+const a=[{person:"mohan",
+age:2,company:"guvi"},
+{person:"rohan",age:3,company:"guvi geeks"},
+{person:"raju",age:4,company:"guvi geek network"}]
+for(let i=0;i<a.length;i++)
+{
+    console.log(`person :${a[i].person},
+age:${a[i].age},
+company:${a[i].company}`)
+}
+//for in loop
+
+for(let res in a){
+    console.log(`person:${a[res].person},
+age:${a[res].age},
+company:${a[res].company}`)
+}
+// for of loop
+
+for(let total of a)
+{
+   console.log(`person :${total.person},
+age:${total.age},
+company:${total.company}`)
+
+}
+//for each loop
+a.forEach((c=>console.log(`person:${c.person},
+age:${c.age},
+company:${c.company}`)))
+
+output:
+person:mohan
+age:2
+company:guvi
+
+person:rohan
+age:3
+company:guvi geeks
+
+person:raju,
+age:4
+company:guvi geek network
+
+
+2.Create your own resume data in JSON format?
+Create your own resume data in JSON format
+data=>
+let resume=[{
+    Name:"rafiya.",
+
+    Email:"rafiyathanvir@gmail.com.",
+
+    City:"chennai.",
+ 
+    Nationality:"Indian.",
+     
+    
+}];
+let Introduction=[{
+
+      objective:"Highly motivated with the ability to deliver excellent all round supervisor.",
+         
+      
+    
+      certificats:"javascript,python.",
+
+    
+       Strength:"creativity,time flexibility,innovative.",
+
+       Languages:"Tamil, English.",    
+}];
+let experince={
+    
+       company1:"sutherlamd worked international voice process.",
+       company2:"css corp  worked as Techical support.",
+       Education :{
+        Degree:" crescent intitute(cgpa:6:97).",
+        High_school:"St. josepsh higher secondary with 82%.",
+
+             },
+       conclusin:"I hereby declare you that the information furnished above are true and best of my knowledge.",
+
+}
+
+for(let Cv in resume)
+{
+console.log(`name:${resume[Cv].Name},
+email:${resume[Cv].Email}
+city:${resume[Cv].City}
+nationality:${resume[Cv].Nationality}`)
+}
+for(let cv in Introduction)
+{
+console.log(`objective:${Introduction[cv].objective}
+certificates:${Introduction[cv].certificats}
+strength:${Introduction[cv].Strength}
+language:${Introduction[cv].Languages}`)
+}
+console.log(`company1:${experince.company1}
+company2:${experince.company2}`)
+console.log(`degree:${experince.Education.Degree}
+High_school:${experince.Education.High_school}
+conclusion:${experince.conclusin}`)
+
+output:
+
+name:rafiya.
+
+email:rafiyathanvir@gmail.com.
+
+city:chennai.
+
+nationality:Indian.
+
+objective:Highly motivated with the ability to deliver excellent all round supervisor.
+
+certificates:javascript,python.
+
+strength:creativity,time flexibility,innovative.
+
+language:Tamil, English.
+
+company1:sutherlamd worked international voice process.
+
+company2:css corp  worked as Techical support.
+
+degree: crescent intitute(cgpa:6:97).
+
+High_school:St. josepsh higher secondary with 82%.
+
+conclusion:I hereby declare you that the information furnished above are true and best of my knowledge.
