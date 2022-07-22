@@ -1,1 +1,16 @@
+1. write a blog on the difference between document and windows objects?
 
+documnet:
+
+-Document object is an object that provides access to all HTML elements of a document. 
+When an HTML document is loaded into a browser window, then it becomes a document object. 
+The document object stores the elements of an HTML document, such as HTML, HEAD, BODY, and other HTML tags as objects.
+
+-It is loaded inside the window.	
+
+windowa objects:
+
+-The window object represents an open window in a browser. If a document contain frames,
+the browser creates one window object for the HTML document, and one additional window object for each frame.
+
+-It is the very first object that is loaded in the browser.
