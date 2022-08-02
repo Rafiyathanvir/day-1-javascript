@@ -1,10 +1,10 @@
 1.For the given JSON iterate over all for loops (for, for in, for of, forEach)?
 ans:
 //for loop
-const a=[{person:"mohan",
-age:2,company:"guvi"},
-{person:"rohan",age:3,company:"guvi geeks"},
-{person:"raju",age:4,company:"guvi geek network"}]
+const a=[{"person":"mohan",
+"age":2,"company":"guvi"},
+{"person":"rohan","age":3,"company":"guvi geeks"},
+{"person":"raju","age":4,"company":"guvi geek network"}]
 for(let i=0;i<a.length;i++)
 {
     console.log(`person :${a[i].person},
@@ -50,39 +50,39 @@ company:guvi geek network
 Create your own resume data in JSON format
 data=>
 let resume=[{
-    Name:"rafiya.",
+    "Name":"rafiya.",
 
-    Email:"rafiyathanvir@gmail.com.",
+    "Email":"rafiyathanvir@gmail.com.",
 
-    City:"chennai.",
+    "City":"chennai.",
  
-    Nationality:"Indian.",
+    "Nationality":"Indian.",
      
     
 }];
 let Introduction=[{
 
-      objective:"Highly motivated with the ability to deliver excellent all round supervisor.",
+      "objective":"Highly motivated with the ability to deliver excellent all round supervisor.",
          
       
     
-      certificats:"javascript,python.",
+      "certificats":"javascript,python.",
 
     
-       Strength:"creativity,time flexibility,innovative.",
+       "Strength":"creativity,time flexibility,innovative.",
 
-       Languages:"Tamil, English.",    
+       "Languages":"Tamil, English.",    
 }];
 let experince={
     
-       company1:"sutherlamd worked international voice process.",
-       company2:"css corp  worked as Techical support.",
+       "company1":"sutherlamd worked international voice process.",
+       "company2":"css corp  worked as Techical support.",
        Education :{
-        Degree:" crescent intitute(cgpa:6:97).",
-        High_school:"St. josepsh higher secondary with 82%.",
+        "Degree":" crescent intitute(cgpa:6:97).",
+        "High_school":"St. josepsh higher secondary with 82%.",
 
              },
-       conclusin:"I hereby declare you that the information furnished above are true and best of my knowledge.",
+       "conclusin":"I hereby declare you that the information furnished above are true and best of my knowledge.",
 
 }
 
