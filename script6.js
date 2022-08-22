@@ -1,7 +1,7 @@
 //day 6
 //3.Write a “person” class to hold all the details.
 
-/*class Person{
+class Person{
 constructor(name,age,email){
     this.name=name
     this.age=age
@@ -15,7 +15,7 @@ getname() {
 }
 }
 var a=new Person("stive",23,"gg12@gmail.com")
-console.log(a.getname())*/
+console.log(a.getname())
 //4.write a class to calculate the uber price.
 
 /*5.The class Movie is stated below. An instance of class Movie represents a film. This class has the following three properties:
@@ -67,7 +67,7 @@ console.log(a4)
 
 //......................................
 //b)uml digram
-/*class Circle{
+class Circle{
     constructor(radious,color)
     {   this.pi=3.142
         this.radious=radious
@@ -94,27 +94,35 @@ console.log(a4)
 }
 var c=new Circle(1.0,"red")
 console.log(c.getarea())
-console.log(c.getcirme())*/
-
+console.log(c.getcirme())
+//////////////////////////////////////////////////////
 //4.write a class to calculate the uber price.
-/*class uber{
-    constructor(a){
+class uber{
+    constructor(dis,waitingcharge){
         this.onekm=14.7
-        this.a=a
-        //this.b=b
+        this.waiting=10
+        this.dis=dis
+        this.waitingcharge=waitingcharge
+        //
 
     }
     getcal(){
-        if(this.a==0){
+        if(this.dis==0){
             return "zero charge"
         }
+        else if(this.dis!=0 && this.waitingcharge>=0){
+            return  (this.dis*this.onekm)+(this.waiting*this.waitingcharge)
+        }
+        
         else{
-            return this.a*this.onekm
+           return "trip cancel"
         }
     }
 
 }
-var u=new uber(2)
-var u1=new uber(0)
+var u=new uber(2,10)
+var u1=new uber(0,0)
+var v2=new uber()
 console.log(u.getcal())
-console.log(u1.getcal())*/
+console.log(u1.getcal())
+console.log(v2.getcal())
