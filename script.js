@@ -1,5 +1,5 @@
 //1.how to compare two json have the same properties without order ?
-var obj1={"name":"perosn","age":"23"}
+var obj1={name:"perosn",age:"23"}
  var obj2={age:"24",name:"person"}
  if (JSON.stringify(obj1)===JSON.stringify(obj2)){
     console.log(true)
