@@ -20,7 +20,7 @@
 
 //1.ananomous and IIfe
 //a.print odd number in array?
-/*var odd=function(a){
+var odd=function(a){
 var oddd=[]
 for(var i=0;i<a.length;i++)
 {
@@ -32,9 +32,9 @@ for(var i=0;i<a.length;i++)
 }
 return oddd
 }
-console.log(odd([1,3,4,5,6,7,8,9,10]))*/
+console.log(odd([1,3,4,5,6,7,8,9,10]))
 //print in IIFE
-/*(function Odd(a){
+(function Odd(a){
     var odd=[]
     for(var i=0;i<a.length;i++)
     {
@@ -45,11 +45,11 @@ console.log(odd([1,3,4,5,6,7,8,9,10]))*/
        }
     }
 })
-([1,2,3,4,5,6]);*/
+([1,2,3,4,5,6]);
 
 //arrow function  odd
 
-/*var arrowodd=(a)=>{
+var arrowodd=(a)=>{
     var odd=[]
     for(var i=0;i<a.length;i++){
         if(a[i]%2!==0){
@@ -61,13 +61,13 @@ console.log(odd([1,3,4,5,6,7,8,9,10]))*/
     return odd
 } 
 var res=arrowodd([1,2,3,4,5,6,7,10,14,11])
-console.log(res)*/
+console.log(res)
 
 
 ///////////////////////////////////////////////////////////////
 
 //b.covert all the string to title caps in a string array
-/*var string=function(a)
+var string=function(a)
 {   var str=[]
     for(var i=0;i<a.length;i++)
     
@@ -79,9 +79,9 @@ console.log(res)*/
 
     return str
 }
-    console.log(string(["guvi","network","zen"]))*/
+    console.log(string(["guvi","network","zen"]))
     //IIFE STRING ARRAY
- /*(function string(a)
+ (function string(a)
 {   
     var str=[]
     for(var i=0;i<a.length;i++)
@@ -93,11 +93,11 @@ console.log(res)*/
     }
    console.log(str)
 })
-(["guvi","network","zen"])*/
+(["guvi","network","zen"])
 
 // arrow:Convert all the strings to title caps in a string array?
 
-/*var arrstr=(a)=>{
+var arrstr=(a)=>{
 var str=[]
 //for(var i=0;i<a.length;i++)
 for(strr of a)
@@ -107,10 +107,10 @@ for(strr of a)
 }
 return str
 }
-console.log(arrstr(["guvi","network"]))*/
+console.log(arrstr(["guvi","network"]))
 //////////////////////////////////////////////////////////////////
 //c)sum all the num in array
-/*var sum=function(a)
+var sum=function(a)
 {   var str=0
     for(var i=0;i<a.length;i++)
     
@@ -121,10 +121,10 @@ console.log(arrstr(["guvi","network"]))*/
 
     return str
 }
-    console.log(sum([4,15,6,1,2]))*/
+    console.log(sum([4,15,6,1,2]))
     
     //IIFE SUM THE NUMBER
-/*(function sum(a)
+(function sum(a)
 {   
     var str=0
     for(var i=0;i<a.length;i++)
@@ -135,23 +135,23 @@ console.log(arrstr(["guvi","network"]))*/
     }
    console.log(str)
 })
-([8,4,5,6,7,8,9])*/
+([8,4,5,6,7,8,9])
 //Sum of all numbers in an array-using arrow
-/*var sum=(a)=>{
+var sum=(a)=>{
 var total=0
 a.forEach(element=>{
       total=total+element  
 })
 return total
 }
-console.log(sum([1,2,3,4,5,6]))*/
+console.log(sum([1,2,3,4,5,6]))
 ////////////////////////////////////////////
 
 //d) return all the prime number in array
 
 //annonomous 
 
-/*let num = [1,-1,2,5,6,7,19,19,10];
+let num = [1,-1,2,5,6,7,19,19,10];
 let result = [];
 var pri=function(num){
     if(num < 2) return false;
@@ -173,12 +173,12 @@ num.forEach(function (element) {
       result.push(element);
     }
   });
-  console.log(result);*/
+  console.log(result);
 
 //IIFE prime number
 
 
-/*(function prime(numArray){
+(function prime(numArray){
 numArray = numArray.filter((number) => {
   for (var i = 2; i <= Math.sqrt(number); i++) {
     if (number % i === 0) return false;
@@ -188,11 +188,11 @@ numArray = numArray.filter((number) => {
 console.log(numArray)
 })
 
-( [2, 3, 4, 5, 6, 7, 8, 9, 10])*/
+( [2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 //.Return all the prime numbers in an array-using arrow
 
-/*let num = [1,-1,2,5,6,7,19,19,10];
+let num = [1,-1,2,5,6,7,19,19,10];
 let result = [];
 var pri=(num)=> {
   if(num < 2) return false;
@@ -210,14 +210,14 @@ num.forEach(function (element) {
     result.push(element);
   }
 });
-console.log(result);*/
+console.log(result);
 
 //////////////////////////////////////////////////////////////
 //e)return all the palidrom in array
 
 //annomous using pali
 
-    /*var isPalindrome=function(str) {
+    var isPalindrome=function(str) {
         var res=[]
        
         for(var i=0;i<str.length;i++){
@@ -230,10 +230,10 @@ console.log(result);*/
       
         return res
       }
-      console.log(isPalindrome(["guvi","malayalam","2002",1221]))*/
+      console.log(isPalindrome(["guvi","malayalam","2002",1221]))
         
       //iife plaidrom
- /*(function isPalindrome(str)
+ (function isPalindrome(str)
 {
         var res=[]
        
@@ -249,11 +249,11 @@ console.log(result);*/
       console.log(res)
 
 })
-      (["guvi","malayalam","2002",1221])*/
+      (["guvi","malayalam","2002",1221])
 
 
       //palidrom using arrow
-     /* var isPalindrome=(str)=> {
+      var isPalindrome=(str)=> {
         var res=[]
        
         for(var i=0;i<str.length;i++){
@@ -267,10 +267,12 @@ console.log(result);*/
         return res
       }
       console.log(isPalindrome(["guvi","malayalam","2002",1221]))
-      */
+      
       /////////////////////////////////////////////////////////////////////////////
+
      // 6.Return median of two sorted arrays of the same size.
-/*var getMedian=function(ar1, ar2)
+
+var getMedian=function(ar1, ar2)
 {
     var n=ar1.length
     var i = 0;  
@@ -317,7 +319,7 @@ var b = [2, 13, 17, 30, 45]
 console.log(getMedian(a,b))*/
 
 //iife two array sort
-/*(function getMedian(ar1, ar2)
+(function getMedian(ar1, ar2)
 {
     var n=ar1.length
     var i = 0; 
@@ -359,23 +361,24 @@ console.log(getMedian(a,b))*/
     console.log( (m1 + m2)/2);
 })
 
-([1, 12, 15, 26, 38],[2, 13, 17, 30, 45])*/
+([1, 12, 15, 26, 38],[2, 13, 17, 30, 45])
 /////////////////////////////////////////////////////////////////////////////
 
 //7.Remove duplicates from an array
 
 
-/*var duplicates=function(a){
+var duplicates=function(a){
    return  a.filter((value,index)=>a.indexOf(value)===index)
 
 }
-console.log(duplicates([1,2,2,3,4,45,45]))*/
+console.log(duplicates([1,2,2,3,4,45,45]))
 //iife duplicate
-/*( function duplicates(a){
+
+( function duplicates(a){
     console.log(  a.filter((value,index)=>a.indexOf(value)===index))
  
  })
- ([1,2,2,3,4,45,45,7])*/
+ ([1,2,2,3,4,45,45,7])
 
  //8.Rotate an array by k times
 
