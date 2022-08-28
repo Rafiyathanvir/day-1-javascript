@@ -31,23 +31,28 @@ c) Write a method getPG, which takes an array of base type Movie as its argument
 
 d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”
 */
-
 class movie
 {
     
 
-    constructor(title,studio,rating,arr)
+    constructor(title,studio,rating)
     { 
        
         this.title=title
         this.studio=studio
-        this.rating=rating
-        this.arr=arr
+        if(rating){
+         this.rating=rating
+        }
+        else{
+            this.rating="PG"
+        }
+
+        
 
     }
-    getpg()
+    getpg(arr)
     {
-          var res=this.arr.filter((ele)=>ele=="PG")
+          var res=arr.filter((ele)=>ele.rating==="PG")
           return res
           }
     }
@@ -61,9 +66,11 @@ var a2=new movie("rock","7screen studio","PG")
 var a3=new movie("caster","7screen studio")
 
 var arr=[a,a1,a2,a3]
-console.log(arr.getpg())
+console.log(a.getpg(arr))
 var a4=new movie("Casino Royale","Eon Productions","PG13")
 console.log(a4)
+
+
 
 //......................................
 //b)uml digram
